@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #34495e;
@@ -19,6 +20,7 @@ body .box {
   background-color: #191919;
   padding: 40px;
   text-align: center;
+  margin: 20px 20px 0px 20px;
 }
 
 body .box h1 {
@@ -55,5 +57,24 @@ body .box button {
 
 body .box button:hover {
   background: #2ecc71;
+}
+
+body footer {
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+body footer .svg {
+  width: 20%;
+  min-width: 65px;
+  margin: 0px auto;
+  margin-bottom: -6px;
+  transition: 0.25s;
+}
+
+body footer .svg:hover {
+  fill: #2ecc71;
 }
 /*# sourceMappingURL=main.css.map */
