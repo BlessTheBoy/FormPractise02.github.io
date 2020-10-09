@@ -45,8 +45,17 @@ body .box input, body .box button {
 }
 
 body .box input:focus, body .box button:focus {
-  width: 100%;
-  border-color: #2ecc71;
+  border: 0;
+  background: none;
+  display: block;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  margin: 20px auto;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
 }
 
 body .box button {
@@ -57,6 +66,17 @@ body .box button {
 
 body .box button:hover {
   background: #2ecc71;
+}
+
+body .box input:-webkit-autofill, body .box button:-webkit-autofill,
+body .box input:-webkit-autofill:hover,
+body .box button:-webkit-autofill:hover,
+body .box input:-webkit-autofill:focus,
+body .box button:-webkit-autofill:focus,
+body .box input:-webkit-autofill:active,
+body .box button:-webkit-autofill:active {
+  transition: background-color 5500s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
 }
 
 body footer {
