@@ -29,7 +29,7 @@ body .box h1 {
   font-weight: 500;
 }
 
-body .box input, body .box button {
+body .box input {
   border: 0;
   background: none;
   display: block;
@@ -44,7 +44,12 @@ body .box input, body .box button {
   transition: 0.25s;
 }
 
-body .box input:focus, body .box button:focus {
+body .box input:focus {
+  width: 100%;
+  border-color: #2ecc71;
+}
+
+body .box button {
   border: 0;
   background: none;
   display: block;
@@ -58,23 +63,14 @@ body .box input:focus, body .box button:focus {
   transition: 0.25s;
 }
 
-body .box button {
-  padding: 14px 40px;
-  width: initial;
-  border-color: #2ecc71;
-}
-
 body .box button:hover {
   background: #2ecc71;
 }
 
-body .box input:-webkit-autofill, body .box button:-webkit-autofill,
+body .box input:-webkit-autofill,
 body .box input:-webkit-autofill:hover,
-body .box button:-webkit-autofill:hover,
 body .box input:-webkit-autofill:focus,
-body .box button:-webkit-autofill:focus,
-body .box input:-webkit-autofill:active,
-body .box button:-webkit-autofill:active {
+body .box input:-webkit-autofill:active {
   transition: background-color 5500s ease-in-out 0s;
   -webkit-text-fill-color: white !important;
 }
